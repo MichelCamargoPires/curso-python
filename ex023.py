@@ -7,20 +7,16 @@
 #sentena 9
 #milhar 1
 
-numero1 = input('dig')
-numero2 = numero1[0]
-numero3 = numero1[1]
-numero4 = numero1[2]
-numero5 = numero1[3]
 
-if numero2 < -1:
-    print(numero2)
-elif numero3 < -1:
-     print(numero3)
-elif numero4  < -1:
-    print(numero4)     
-else :
-    print('4')
+num = int(input('digite um numero'))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print('analisando o numero {}'.format(num))
 
+print('unidade {}'.format(u))
+print('dezena  {}'.format(d))
+print('centena {}'.format(c))
+print('milhar  {}'.format(m))
 
-#terminar sa porra
