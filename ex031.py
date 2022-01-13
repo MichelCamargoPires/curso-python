@@ -2,10 +2,10 @@
 #calcule o preço da passagem,cobrada r$0.50 por km para viagens ate 200km e r$0.45 para viagens mais longas
 
 
-viagem = float(input('quantos km vc vai viajar'))
-baixo = viagem * 0.50
-alta = viagem * 0.45
+viagem = float(input('quantos km vc vai viajar: '))
 if viagem <= 200:
-    print('sua viagem vai custar{}'.format(baixo))
+    preço = viagem * 0.50
 else:
-    print('sua pasagem vai custar{}'.format(alta))
+    preço = viagem * 0.45
+print('sua viagem custo {}'.format(preço))
+    
