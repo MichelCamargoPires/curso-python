@@ -5,10 +5,11 @@
 #para os inferiorres ou ingual e de 15%
 
 salario = float(input('qual seu salario'))
-maior = (salario * 10 / 100) + salario
-menor = (salario * 15 / 100) + salario
 if salario > 1250:
-    print('seu almento foi de 10% {}'.format(maior))
+    novo = (salario * 10 / 100) + salario
 else:
-    print('seu salario teve um almento de 15% {}'.format(menor))
+    novo = (salario * 15 / 100) + salario
+print('seu salario teve um almento {}'.format(novo))
 
+
+   
