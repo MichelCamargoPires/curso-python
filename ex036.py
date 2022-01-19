@@ -8,16 +8,13 @@ print('-------------------------------------')
 salario = float(input('quanto vc ganha: '))
 print('-------------------------------------')
 anos = int(input('quantos anos vc vai pagar: '))
-mes = anos * 12
-parcela = valorDaCasa // mes
-psSalario = salario * 30 // 100
+parcela = valorDaCasa / (anos * 12 )
+psSalario = salario * 30 / 100
 if parcela <= psSalario :
     print('aprovado')
 else:
     print('negado')
-print('mes que vc vai pagar: {}'.format(mes))
+print('parcela da sua casa e: {:.2f}'.format(parcela))
 print('-------------------------------------')
-print('parcela da sua casa e: {}'.format(parcela))
-print('-------------------------------------')
-print('30% do seu salario{}'.format(psSalario))
+print('30% do seu salario{:.2f}'.format(psSalario))
 print('-------------------------------------')
