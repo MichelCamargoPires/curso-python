@@ -7,8 +7,7 @@
 #EM ATE 2X NO CARTAO PREÇO NORMAL 
 
 #3X OU MAIS NO CARTAO 20% DE JUROS
-print('''============================
-***vc vai pagar como***
+print('''***vc vai pagar como***
 ======================================''')
 print(''' a vista ou cheque digite [1]
 --------------------------------------
