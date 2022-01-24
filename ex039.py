@@ -8,8 +8,10 @@
 
 #seu programa tembem tera que mosrtar o tempo que falta ou passou do prazo
 
-ano = int(input('quantos anos vc tem?: '))
-idade = 2022 - ano 
+from datetime import date
+atual = date.today().year
+ano = int(input('em que ano voce nasceu?: '))
+idade = atual - ano 
 if idade < 18:
     re = 18 - idade
     print('falta {}'.format(re))
@@ -18,4 +20,3 @@ elif idade > 18:
     print('passou {}'.format(re))
 else:
     print('vai se alista')
-
