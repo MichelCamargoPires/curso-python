@@ -8,14 +8,14 @@
 
 #seu programa tembem tera que mosrtar o tempo que falta ou passou do prazo
 
-idade = int(input('quantos anos vc tem?: '))
+ano = int(input('quantos anos vc tem?: '))
+idade = 2022 - ano 
 if idade < 18:
-    falta =  18 - idade
-    print('falta {} anos'.format(falta))
-elif idade == 18:
-    print('na hora')
+    re = 18 - idade
+    print('falta {}'.format(re))
 elif idade > 18:
-    passou = idade - 18
-    print('passou {} anos'.format(passou))
+    re = idade - 18
+    print('passou {}'.format(re))
 else:
-    print(' desculpe digite novamnete :(')
+    print('vai se alista')
+
