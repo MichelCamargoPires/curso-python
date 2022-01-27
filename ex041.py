@@ -10,7 +10,10 @@
 
 #acima master opkpok
 
-idade = int(input('qual sua idade: '))
+from datetime import date
+atual = date.today().year
+nascimento = int(input('qual ano que vc nasceu : '))
+idade = atual - nascimento
 if idade <= 9:
     print('vc e mirim')
 elif idade == 19:
@@ -19,3 +22,5 @@ elif idade == 20:
     print('vc e senior')
 elif idade <= 14:
     print('vc e infantils')
+else:
+    print('mestre')
