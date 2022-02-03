@@ -22,10 +22,48 @@
 #    re = 'vc empatou com o computadot'
 
 from random import randint
-intns = ('pedra', 'papel', 'tesoura')
+from time import sleep
+itens = ('pedra', 'papel', 'tesoura')
 computador = randint(0, 2)
 print('''suas opçoes:
 [0] pedra
 [1] papel
 [2] tesoura''')
-jogador = int(input('qual e a sua jogada '))
+jogador = int(input('qual e a sua jogada? '))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!')
+sleep(1)
+print('-'*40)
+print('computador jogo: {}'.format(itens[computador]))
+print('jogador jogo: {}'.format(itens[jogador]))
+print('-'*40)
+if computador == 0: #computador jogo pedra 
+    if jogador == 0:
+        print('EMPATA')
+    elif jogador == 1:
+        print('JOGADOR VENCE')
+    elif jogador == 2:
+        print('COMPTADOR VENCE')
+    else:
+        print('JOGADA INVALIDA')
+elif computador == 1: #computador jogo papel
+    if jogador == 0:
+        print('COMPUTADOR VENCE')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('JOGADOR VENCE ')
+    else:
+        print('JOGADA INVALIDA')
+elif computador == 2: #computador jogo tesouro
+    if jogador == 0:
+        print('JOGADOR VENCE')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('COMPUTADOR VENCE')
+    else:
+        print('JOGADA INVALIDA')
