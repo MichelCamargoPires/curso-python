@@ -3,5 +3,7 @@
 num = int(input('digite o primeiro numero: '))
 print('-'*25)
 pa = int(input('digite a pa: '))
-for c in range (num, 10, pa ):
-    print(c)
+decimo = num + (10 - 1) * pa 
+for c in range (num, decimo, pa ):
+    print('{}'.format(c), end=' * ' )
+print('acabou')
