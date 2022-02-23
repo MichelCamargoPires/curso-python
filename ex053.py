@@ -9,3 +9,7 @@ inveso =''
 for letra in range(len(junto) -1 ,-1,-1):  
     inveso += junto[letra]  
 print(inveso)
+if inveso == frase:
+    print('{} e um palimetro'.format(frase))
+else:
+    print('afase {} nao e um palimetro'.format(frase))
