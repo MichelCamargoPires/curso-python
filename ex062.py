@@ -8,12 +8,12 @@ total = 0
 mais = 10
 while mais != 0:
     total = total + mais
-    while const <= 10:
+    while const <= total:
         print('{} ->>'.format(termo),end='')
         termo += razao
         const += 1
     print('vai incara')
-mais = int(input('mais quanto: '))
+    mais = int(input('mais quanto: '))
+print('progressao finalizada com {} termos mostrodos'.format(total))
 
 
-terminar
