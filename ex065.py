@@ -1,9 +1,20 @@
-cont = soma = p = n = 0
-while p != 'n':
-    p = str(input('quer digirar mais um nuemro[N/S]: '))
-    n = int(input('digite um numero'))
+from traceback import print_tb
+
+
+resp = 'S'
+maior = menor = cont = soma = p = n = 0
+while resp != 'N':
+    n = int(input('digite um numero: '))
     cont += 1
     soma += n
-print('soma {} contador {}'.format(soma, cont)) 
-
-   termina
+    if cont == 1:
+        maior = menor = n
+    else:
+        if n > maior:
+            maior = n
+        if n < menor:
+            menor = n
+    resp = str(input('quer continuar: ')).upper().strip()[0]
+media = soma / cont
+print('vc digitou {} numero e a media {}'.format(cont, media))
+print('o maior numero foi {} menor foi {}'.format(maior, menor))
